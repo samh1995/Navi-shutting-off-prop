@@ -12,16 +12,16 @@ Batch = [];
 iBatch = 0;
 crash_array = [];
 
-for vImpact = -2:0.05:3
-    for inclinationImpact = -30:5:30
+for vImpact = -2:0.05:2.05
+    for inclinationImpact = 0:5:5
         for yawImpact = 0:45:45
             if abs(yawImpact) == 45
                 angle = (inclinationImpact - 0.0042477)/1.3836686;
                 rollImpact = -angle;
                 pitchImpact = -angle;
-            elseif yawImpact == 0
-                rollImpact = 0;
-                pitchImpact = -inclinationImpact;
+%             elseif yawImpact == 0
+%                 rollImpact = 0;
+%                 pitchImpact = -inclinationImpact;
             end   
             
             iBatch = iBatch + 1;

@@ -17,11 +17,11 @@ clearvars -except VxImpact rollImpact pitchImpact yawImpact iBatch
 %% Prescribe Initial Conditions
 % (comment section if prescribing from outside function like
 % sim_MonteCarlo.m or sim_Batch.m)
-
+% 
 % VxImpact =2;
 % inclinationImpact = 10; %degrees
 % yawImpact = 45; %degrees
-
+% 
 % angle = (inclinationImpact - 0.0042477)/1.3836686;
 % rollImpact = -angle; %degrees
 % pitchImpact = -angle; %degrees
